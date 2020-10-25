@@ -478,6 +478,12 @@
     width: 100%; 
     text-align: center;    
   }
+  .section_texetes h2 {
+    padding-top: 20px;
+  }
+  .section_texetes p {
+    padding-bottom: 35px;
+  }
   /* ----our----- */
   .article_our{
     box-sizing: border-box;
