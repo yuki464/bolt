@@ -242,17 +242,14 @@
     font-size: 20px;
   }
   .contact_wrap{
-    padding-top: 15px;
   }
   /* ----section iphon--- */
-  .section {
-    max-width: 100%;
-    height: auto;
-  }
+  
 	.section_contents {
     display: block;
   }
   .iphone {
+    padding-left: 0;
     padding-bottom: 20px;
   }
   .section_texetes {
@@ -272,10 +269,6 @@
   }
 
   /* -----our------ */
-  .article_our{
-    max-width: 100%;
-    height: auto;
-  }
   .our_text {
     font-size: 36px;
     padding-top: 60px;
@@ -308,10 +301,7 @@
     font-size: 20px;
   }
   /* ------SKILL------ */
-  .skill {
-    max-width: 100%;
-    height: auto;
-  }
+  
   .skills_wrap {
     flex-direction: column;
     align-items: center;
@@ -330,18 +320,16 @@
 @media screen and (max-width:767px) {
   .wrapper  {
     overflow: hidden;
-    margin: auto;
+    /* margin: auto; */
   }
   .inner {
     width: 97%;
   }
   .header{
-    height: 175px;
   }
   .header_wrap {
    display: flex;
-   justify-content: space-between;
-  
+   justify-content: space-around;
   }
   .bolt_icon  {
     font-size: 75px;
@@ -363,7 +351,6 @@
   /*アイコンのスペース*/
   #nav-open {
     margin-top: 30px;
-    margin-right: 50px;
     display: inline-block;
     width: 30px;
     height: 22px;
@@ -447,12 +434,8 @@
   }
   /* -----ハンバーガーーーーーー */
 /* -------them------ */
-  .them {
-    max-width: 100%;
-    height: auto;
-  } 
   .them_message{
-    padding-top: 160px;
+    padding-top: 260px;
     padding-bottom: 20px;
     font-size: 80px;
   }
@@ -464,9 +447,10 @@
   /* -----section------- */
 
   .section  {
-    max-width: 100%;
-    height: auto;
     background-color: #74cfae;
+  }
+  .iphone {
+    padding-left: 0;
   }
   .section_contents  {
     display: block;
@@ -474,6 +458,7 @@
   .section_texetes {
     width: 100%; 
     text-align: center;    
+    padding-left: 0;
   }
   .section_texetes h2 {
     padding-top: 20px;
@@ -483,12 +468,10 @@
   }
   /* ----our----- */
   .article_our{
-    box-sizing: border-box;
-    max-width: 100%;
-    height: auto;
+    
   }
   .our_text {
-    font-size: 60px;
+    font-size: 30px;
   }
 	.our_contents{
     flex-wrap: nowrap;
@@ -499,8 +482,8 @@
   }
   .our_img  {
     margin: auto;
-    height: 600px;
-    width: 600px;
+    height: auto;
+    width: auto;
   }
   .our_img:nth-child(4) {
     margin-top: 100px;
@@ -515,10 +498,7 @@
     margin-bottom: 100px;
   }  
  /* ----SKILL------------- */
- .skill {
-  max-width: 100%;
-  height: auto;
- }
+ 
  .skill_title {
    font-size: 50px;
  }
@@ -526,8 +506,8 @@
   display: block;
 }
 .skill_box img {
-  width: 230px;
-  height: 230px;
+  width: auto;
+  height: auto;
 }
 .skill_box p {
   font-size: 25px;
@@ -540,10 +520,7 @@
   padding-bottom: 100px;
 }
 /* -------nav------------ */
-.sns  {
-  max-width: 100%;
-  height: auto;
-}
+
 .sns_wrap {
   display: block;
   padding-top: 50px;
