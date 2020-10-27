@@ -32,9 +32,10 @@
   width: 1100px;
 }
 .header_wrap {
+  display: flex;
+  justify-content: space-between;
 }
 .bolt_icon  {
-  float: left;
   color: #333;
   padding:15px 0 ;
   font-size: 32px;
@@ -42,7 +43,6 @@
 }
 .contact_wrap  {
  padding: 20px 0;
- float: right;
 }
 .contact  {
   padding: 14px 15px;
@@ -80,19 +80,18 @@
 .iphone {
   height: 300px;
   /* padding-top: 50px; */
-  padding-left: 100px;
+  margin-left: 100px;
 }
 .section_texetes {
   color:white; 
   width: auto;
-  padding-right: 100px;
-  padding-left: 100px; 
+  margin: 0 100px;
   text-align: center;    
 }
 .section_texetes h2 {
   font-family: "Raleway";
   padding-top: 60px;
-  padding-bottom: 35px;
+  margin-bottom: 35px;
   font-size: 24px;
 }
 .section_texetes p{
@@ -110,15 +109,13 @@
   font-family: "Raleway";
   font-size: 24px;
   color: #333;
-  /* padding-top: 60px; */
-  /* padding-bottom: 40px; */
 }
 .our_contents{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding-bottom: 90px;
-  padding-top: 40px;
+  margin-bottom: 90px;
+  margin-top: 40px;
   width: 1100px;
   height: 700px;
   margin: auto;
@@ -156,7 +153,7 @@
 .our_foot_text  {
   width: 640px;
   height: 40px;
-  padding-right: 80px;
+  margin-right: 80px;
 }
 .our_email  {
   color: #fff;
@@ -178,8 +175,7 @@
 .skill_title  {
   font-family: "Raleway";
   font-size: 24px;
-  /* padding-top: 70px; */
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 .skills_wrap  {
   display: flex;
@@ -203,17 +199,15 @@
 /* ----------sns------------- */
 .sns  {
   background-color: #f2f2f2;
+  padding:200px 0;
 }
 .sns_wrap {
   display: flex;
   justify-content: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
 }
 .sns_box {
   width: 185px;
-  height: 110px;
-  padding-top: 30px;
+  padding: 30px 0;
   font-size: 70px;
   transition: all  0.3s ;
 }
@@ -254,40 +248,44 @@
     justify-content: space-between;
   }
   /* ----section iphon--- */
-  
+  .section {
+    padding-bottom: 25px;
+  }
 	.section_contents {
     display: block;
   }
   .iphone {
-    padding-left: 0;
-    padding-bottom: 20px;
+    margin-left: 0;
+    margin-bottom: 20px;
   }
   .section_texetes {
-    padding-left: 10px;
-    padding-right: 10px;
+    margin: 0 10px;
     width: auto;
     margin: auto;
   }
   .section_texetes h2 {
     padding-top: 0;
-    padding-bottom: 25px;
+    margin-bottom: 25px;
   }
   .section_texetes p{
     height: 70px;
-    padding-bottom: 25px;
     word-break: break-all;
   }
 
   /* -----our------ */
+  .article_our {
+    padding-top: 60px;
+    padding-bottom: 70px;
+  }
   .our_text {
     font-size: 36px;
-    padding-top: 60px;
-    padding-bottom: 40px;
+    margin-bottom: 40px;
   }
 	.our_contents{
     flex-wrap: nowrap;
     flex-direction: column;
     width: auto;
+    margin-bottom: 80px;
     height: 40%;
   }
   .our_img  {
@@ -298,8 +296,6 @@
   }
   .our_foot {
     display: block;
-    padding-top: 80px;
-    padding-bottom: 70px;
   }
   .our_foot_text {
     margin: auto;
@@ -318,7 +314,7 @@
   }
   .skill_box {
     margin-left: 0;
-    padding-bottom: 88px;
+    margin-bottom: 88px;
   }
   .skill_box:last-child {
     margin-bottom: 0;
@@ -447,23 +443,30 @@
   }
   /* -----ハンバーガーーーーーー */
 /* -------them------ */
-  .them_message{
+  .them {
     padding-top: 160px;
-    padding-bottom: 20px;
+    padding-bottom: 130px;
+  }
+  .them_message{
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 20px;
     font-size: 80px;
   }
   .them_text  {
-    padding-bottom: 130px;
-    line-height: 50px;
+    /* line-height: 50px; */
+    font-size: 30px;
+    padding-bottom: 0;
   }
 
   /* -----section------- */
 
   .section  {
     background-color: #74cfae;
+    padding-bottom: 35px;
   }
   .iphone {
-    padding-left: 0;
+    margin-left: 0;
   }
   .section_contents  {
     display: block;
@@ -471,13 +474,12 @@
   .section_texetes {
     width: 100%; 
     text-align: center;    
-    padding-left: 0;
+    margin: 0 5px;
   }
   .section_texetes h2 {
-    padding-top: 20px;
+    margin-top: 20px;
   }
   .section_texetes p {
-    padding-bottom: 35px;
   }
   /* ----our----- */
   .article_our{
@@ -485,6 +487,7 @@
   }
   .our_text {
     font-size: 30px;
+    margin-bottom: 30px;
   }
 	.our_contents{
     flex-wrap: nowrap;
@@ -503,6 +506,10 @@
   }
   .our_foot {
     display: block;
+    margin-top: 50px; 
+  }
+  .our_foot p {
+    margin-bottom: 50px;
   }
   .our_foot_text {
     padding-right: 0;
@@ -533,11 +540,14 @@
   padding-bottom: 100px;
 }
 /* -------nav------------ */
-
-.sns_wrap {
-  display: block;
+.sns {
   padding-top: 50px;
   padding-bottom: 100px;
+}
+.sns_wrap {
+  display: block;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 .sns_box {
   margin: auto;
