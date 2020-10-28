@@ -53,18 +53,16 @@
 /* -----header------------------- */
 .them {
   background-color: #f2f2f2;
+  padding: 250px 0;
 }
 
-.them_message{
-  padding-top: 250px;
-  padding-bottom: 20px;
+.them_message {
   color: #74cfae	;
   font-size: 90px;
   font-weight: 700;
 }
 .them_text  {
-  font-family: "Lato";
-  padding-bottom: 250px;
+  margin-top: 20px;
   font-size: 30px;
   color: #c0c0c0;
 }
@@ -90,11 +88,11 @@
 }
 .section_texetes h2 {
   font-family: "Raleway";
-  padding-top: 60px;
-  margin-bottom: 35px;
+  margin-top: 60px;
   font-size: 24px;
 }
 .section_texetes p{
+  margin-top: 35px;
   font-size: 20px;
   
 }
@@ -111,55 +109,51 @@
   color: #333;
 }
 .our_contents{
+  margin-top: 40px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 90px;
-  margin-top: 40px;
   width: 1100px;
   height: 700px;
-  margin: auto;
 }
 .our_img  {
+  margin-left: 100px;
   transition: all .3s;
   opacity: 0.7;
   width: 300px;
   height: 300px;
-  margin-left: 100px;
-  margin-bottom: 80px; 
 }
 .our_img:hover {
   opacity: 0.3;
 }
-.our01,.our04 {
+.our_img:first-child {
   margin-left: 0;
 }
-.our04,.our05,.our06  {
+.our_img:nth-child(4) {
+  margin-left: 0;
+}
+.our_img:nth-child(n+4) {
   margin-bottom: 0;
+  margin-top: 80px;
 }
-/* .our_contents:nth-of-type(4)  {
-  padding-left: 0;
-}
-.our_contents:nth-last-of-type(3) {
-  padding-bottom: 0;
-} */
+
 .our_foot {
   color: #333;
-  /* padding-top: 90px; */
-  /* padding-bottom: 70px; */
   display: flex;
+  align-items: center;
   justify-content: center;
+  margin-top: 90px;
 }
 .our_foot_text  {
   width: 640px;
   height: 40px;
-  margin-right: 80px;
 }
 .our_email  {
   color: #fff;
   font-size: 12px;
   background-color: #74cfae	;
   padding: 14px 20px;
+  margin-left: 90px;
 }
 /* ---------skill------------ */
 
@@ -175,9 +169,9 @@
 .skill_title  {
   font-family: "Raleway";
   font-size: 24px;
-  margin-bottom: 50px;
 }
 .skills_wrap  {
+  margin-top: 50px;
   display: flex;
   justify-content: center;
 }
@@ -256,18 +250,18 @@
   }
   .iphone {
     margin-left: 0;
-    margin-bottom: 20px;
   }
   .section_texetes {
     margin: 0 10px;
     width: auto;
-    margin: auto;
+    margin-top: 20px;
   }
   .section_texetes h2 {
+    margin-top: 0;
     padding-top: 0;
-    margin-bottom: 25px;
   }
   .section_texetes p{
+    margin-top: 25px;
     height: 70px;
     word-break: break-all;
   }
@@ -279,30 +273,36 @@
   }
   .our_text {
     font-size: 36px;
-    margin-bottom: 40px;
   }
 	.our_contents{
+    margin-top: 40px;
     flex-wrap: nowrap;
     flex-direction: column;
     width: auto;
-    margin-bottom: 80px;
-    height: 40%;
+    height: auto;
   }
-  .our_img  {
+  .our_img, .our_img:first-child,.our_img:nth-child(4) {
     margin: auto;
+  }
+  .our_img:nth-child(n+4) {
+    margin-bottom: 0;
+    margin-top: 0;
   }
   .our_img:nth-child(4) {
     margin-top: 80px;
   }
   .our_foot {
+    margin-top: 80px;
     display: block;
   }
   .our_foot_text {
-    margin: auto;
     width: 100%;
     margin-bottom: 40px;
   }  
   .our_email {
+    margin-left: 0;
+    /* ↓なぜか聞かない */
+    margin-top: 40px;
     padding: 15px 30px;
     font-size: 20px;
   }
@@ -314,10 +314,10 @@
   }
   .skill_box {
     margin-left: 0;
-    margin-bottom: 88px;
+    margin-top: 88px;
   }
-  .skill_box:last-child {
-    margin-bottom: 0;
+  .skill_box:first-child {
+    margin-top: 0;
   }
 }
 /* ---------メディアクエリsp-------- */
@@ -450,13 +450,11 @@
   .them_message{
     padding-top: 0;
     padding-bottom: 0;
-    margin-bottom: 20px;
     font-size: 80px;
   }
   .them_text  {
-    /* line-height: 50px; */
+    margin-top: 20px;
     font-size: 30px;
-    padding-bottom: 0;
   }
 
   /* -----section------- */
@@ -487,9 +485,9 @@
   }
   .our_text {
     font-size: 30px;
-    margin-bottom: 30px;
   }
 	.our_contents{
+    margin-top: 30px;
     flex-wrap: nowrap;
     flex-direction: column;
     align-items: center;
@@ -497,12 +495,16 @@
     height: 40%;
   }
   .our_img  {
-    margin: auto;
+    margin: 0 auto;
     height: auto;
     width: 100%;
   }
   .our_img:nth-child(4) {
-    margin-top: 100px;
+    margin-top: 100px!important;
+  }
+  .our_img:nth-child(n+4) {
+    margin-bottom: 0;
+    margin-top: 0;
   }
   .our_foot {
     display: block;
@@ -513,12 +515,16 @@
   }
   .our_foot_text {
     padding-right: 0;
-    margin: auto;
-    max-width: 100%;
-    margin-bottom: 100px;
   }  
+  .our_email {
+    margin-top: 100px;
+    margin-left: 0;
+  }
  /* ----SKILL------------- */
- 
+ .skill {
+
+   padding: 100px 0;
+ }
  .skill_title {
    font-size: 50px;
  }
@@ -535,9 +541,10 @@
 }
 .skill_box {
   margin: 0;
+  margin-top: 100px;
 }
-.skill_box  {
-  padding-bottom: 100px;
+.skill_box:first-child {
+  margin-top: 0;
 }
 /* -------nav------------ */
 .sns {
@@ -550,9 +557,6 @@
   padding-bottom: 0;
 }
 .sns_box {
-  margin: auto;
-  /* margin-left: 15px;
-  margin-right: 15px; */
   width:100%;
 }
 /* ----footer------- */
