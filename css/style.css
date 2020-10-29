@@ -2,6 +2,11 @@
 .header-logo-menu {
   display: none;
 }
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
 .btn  {
   text-decoration: none;
   transition: all  0.3s ;
@@ -18,9 +23,11 @@
 .inner{
   width: 1100px;
   text-align: center;
+  align-items: center;
   margin: 0 auto;
 }
 .header{
+  padding: 15px 0;
   z-index: 999;
   position: fixed;
   top:0;
@@ -30,20 +37,15 @@
 }
 .header-inner {
   width: 1100px;
-}
-.header_wrap {
   display: flex;
   justify-content: space-between;
 }
 .bolt_icon  {
   color: #333;
-  padding:15px 0 ;
   font-size: 32px;
   padding-left: ;
 }
-.contact_wrap  {
- padding: 20px 0;
-}
+
 .contact  {
   padding: 14px 15px;
   color: #fff;
@@ -51,47 +53,46 @@
   background-color: #74cfae	;
 }
 /* -----header------------------- */
-.them {
+.theme {
   background-color: #f2f2f2;
   padding: 250px 0;
 }
 
-.them_message {
+.theme_message {
   color: #74cfae	;
   font-size: 90px;
   font-weight: 700;
 }
-.them_text  {
+.theme_text  {
   margin-top: 20px;
   font-size: 30px;
   color: #c0c0c0;
 }
 /* --------theme-------------------- */
-.section  {
+.iphone_zone  {
   background-color: #74cfae;
   padding-top: 50px;
 }
-.section_contents  {
+.iphone_zone_contents  {
   display: flex;
   justify-content: space-around;
 }
 .iphone {
   height: 300px;
-  /* padding-top: 50px; */
-  margin-left: 100px;
+  padding-left: 100px;
 }
-.section_texetes {
+.iphone_zone_text {
   color:white; 
   width: auto;
   margin: 0 100px;
   text-align: center;    
 }
-.section_texetes h2 {
+.iphone_zone_text h2 {
   font-family: "Raleway";
   margin-top: 60px;
   font-size: 24px;
 }
-.section_texetes p{
+.iphone_zone_text p{
   margin-top: 35px;
   font-size: 20px;
   
@@ -114,7 +115,7 @@
   justify-content: center;
   flex-wrap: wrap;
   width: 1100px;
-  height: 700px;
+  /* height: 700px; */
 }
 .our_img  {
   margin-left: 100px;
@@ -195,34 +196,31 @@
   background-color: #f2f2f2;
   padding:200px 0;
 }
-.sns_wrap {
+.sns_box {
   display: flex;
   justify-content: center;
-}
-.sns_box {
-  width: 185px;
-  padding: 30px 0;
-  font-size: 70px;
-  transition: all  0.3s ;
 }
 .sns_box a {
   color: #74cfae;
   text-decoration: none;
+  padding: 30px 92.5px;
+  font-size: 70px;
+  transition: all  0.3s ;
 }
-.sns_box:hover {
+.sns_box a:hover {
   background-color: #fff;
 }
 /* ---------footer-------- */
 .footer {
-  /* width: 100%; */
   padding-top: 20px;
   padding-bottom: 25px;
   background-color: #74cfae;
 }
-.foot_box {
-  float: right;
+
+.foot_message {
   color: #f2f2f2f2;
   padding-right:170px;
+  float: right;
 }
 
 /* ------メディアクエリTABーーーーーー */
@@ -234,33 +232,27 @@
   .bolt_icon {
     font-size: 35px;
   }
-  .contact {
-    /* padding: 15px 30px; */
-    /* font-size: 20px; */
-  }
-  .contact_wrap{
-    justify-content: space-between;
-  }
   /* ----section iphon--- */
-  .section {
+  .iphone_zone {
+    padding-top: 50px;
     padding-bottom: 25px;
   }
-	.section_contents {
+	.iphone_zone_contents {
     display: block;
   }
   .iphone {
-    margin-left: 0;
+    padding-left: 0;
   }
-  .section_texetes {
+  .iphone_zone_text {
     margin: 0 10px;
     width: auto;
     margin-top: 20px;
   }
-  .section_texetes h2 {
+  .iphone_zone_text h2 {
     margin-top: 0;
     padding-top: 0;
   }
-  .section_texetes p{
+  .iphone_zone_text p{
     margin-top: 25px;
     height: 70px;
     word-break: break-all;
@@ -279,7 +271,7 @@
     flex-wrap: nowrap;
     flex-direction: column;
     width: auto;
-    height: auto;
+    /* height: auto; */
   }
   .our_img, .our_img:first-child,.our_img:nth-child(4) {
     margin: auto;
@@ -334,12 +326,7 @@
   .inner {
     width: 97%;
   }
-  .header{
-  }
-  .header_wrap {
-   display: flex;
-   justify-content: space-between;
-  }
+  
   .bolt_icon  {
     font-size: 4em;
   }
@@ -359,7 +346,6 @@
   
   /*アイコンのスペース*/
   #nav-open {
-    margin-top: 30px;
     display: inline-block;
     width: 30px;
     height: 22px;
@@ -443,41 +429,39 @@
   }
   /* -----ハンバーガーーーーーー */
 /* -------them------ */
-  .them {
+  .theme {
     padding-top: 160px;
     padding-bottom: 130px;
   }
-  .them_message{
+  .theme_message{
     padding-top: 0;
     padding-bottom: 0;
     font-size: 80px;
   }
-  .them_text  {
+  .theme_text  {
     margin-top: 20px;
     font-size: 30px;
   }
 
-  /* -----section------- */
+  /* -----section iphone------- */
 
-  .section  {
+  .iphone_zone {
     background-color: #74cfae;
     padding-bottom: 35px;
   }
   .iphone {
-    margin-left: 0;
+    padding-left: 0;
   }
-  .section_contents  {
+  .iphone_zone_contents  {
     display: block;
   }
-  .section_texetes {
+  .iphone_zone_text {
     width: 100%; 
     text-align: center;    
     margin: 0 5px;
   }
-  .section_texetes h2 {
+  .iphone_zone_text h2 {
     margin-top: 20px;
-  }
-  .section_texetes p {
   }
   /* ----our----- */
   .article_our{
@@ -492,7 +476,6 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 40%;
   }
   .our_img  {
     margin: 0 auto;
@@ -551,16 +534,17 @@
   padding-top: 50px;
   padding-bottom: 100px;
 }
-.sns_wrap {
-  display: block;
+.sns_box {
+  flex-direction: column;
   padding-top: 0;
   padding-bottom: 0;
 }
-.sns_box {
+.sns_box a {
   width:100%;
+  padding: 50px 0;
 }
 /* ----footer------- */
-.foot_box {
+.foot_message {
   width: 420px;
   font-size: 20px;
   padding-right:20px;
