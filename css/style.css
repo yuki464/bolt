@@ -89,7 +89,7 @@
 }
 .iphone_zone_text h2 {
   font-family: "Raleway";
-  margin-top: 60px;
+  padding-top: 60px;
   font-size: 24px;
 }
 .iphone_zone_text p{
@@ -125,7 +125,7 @@
   height: 300px;
 }
 .our_img:hover {
-  opacity: 0.3;
+  opacity: 1;
 }
 .our_img:first-child {
   margin-left: 0;
@@ -189,7 +189,7 @@
 }
 .skill_box p  {
   font-size: 16px;
-  padding-top: 10px;
+  margin-top: 10px;
 }
 /* ----------sns------------- */
 .sns  {
@@ -203,7 +203,8 @@
 .sns_box a {
   color: #74cfae;
   text-decoration: none;
-  padding: 30px 92.5px;
+  width: 185px;
+  padding: 30px 0;
   font-size: 70px;
   transition: all  0.3s ;
 }
@@ -464,9 +465,6 @@
     margin-top: 20px;
   }
   /* ----our----- */
-  .article_our{
-    
-  }
   .our_text {
     font-size: 30px;
   }
@@ -505,7 +503,6 @@
   }
  /* ----SKILL------------- */
  .skill {
-
    padding: 100px 0;
  }
  .skill_title {
@@ -547,5 +544,5 @@
 .foot_message {
   width: 420px;
   font-size: 20px;
-  padding-right:20px;
+  padding-right:0px;
 }
