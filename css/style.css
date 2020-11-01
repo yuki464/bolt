@@ -20,6 +20,9 @@
   margin: 0 auto;
   font-family: "Lato";
 }
+.iphone_zone_text h2,.our_text {
+  font-family: "Raleway";
+}
 .inner{
   width: 1100px;
   text-align: center;
@@ -85,10 +88,8 @@
   color:white; 
   width: auto;
   margin: 0 100px;
-  text-align: center;    
 }
 .iphone_zone_text h2 {
-  font-family: "Raleway";
   padding-top: 60px;
   font-size: 24px;
 }
@@ -105,7 +106,6 @@
 }
 
 .our_text {
-  font-family: "Raleway";
   font-size: 24px;
   color: #333;
 }
@@ -115,7 +115,6 @@
   justify-content: center;
   flex-wrap: wrap;
   width: 1100px;
-  /* height: 700px; */
 }
 .our_img  {
   margin-left: 100px;
@@ -181,7 +180,6 @@
 }
 .skill_box  {
   margin-left: 180px;
-  /* padding-bottom: 100px; */
 }
 .skill_box img  {
   height: 120px;
@@ -205,7 +203,7 @@
   text-decoration: none;
   width: 185px;
   padding: 30px 0;
-  font-size: 70px;
+  font-size: 50px;
   transition: all  0.3s ;
 }
 .sns_box a:hover {
@@ -272,7 +270,6 @@
     flex-wrap: nowrap;
     flex-direction: column;
     width: auto;
-    /* height: auto; */
   }
   .our_img, .our_img:first-child,.our_img:nth-child(4) {
     margin: auto;
