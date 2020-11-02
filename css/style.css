@@ -2,11 +2,11 @@
 .header-logo-menu {
   display: none;
 }
-.clearfix::after {
+/* .clearfix::after {
   content: "";
   display: block;
   clear: both;
-}
+} */
 .btn  {
   text-decoration: none;
   transition: all  0.3s ;
@@ -88,9 +88,9 @@
   color:white; 
   width: auto;
   margin: 0 100px;
+  padding-top: 60px;
 }
 .iphone_zone_text h2 {
-  padding-top: 60px;
   font-size: 24px;
 }
 .iphone_zone_text p{
@@ -126,10 +126,9 @@
 .our_img:hover {
   opacity: 1;
 }
-.our_img:first-child {
+
+.our_img:nth-child(3n+1) {
   margin-left: 0;
-}
-.our_img:nth-child(4) {
   margin-left: 0;
 }
 .our_img:nth-child(n+4) {
@@ -215,11 +214,12 @@
   padding-bottom: 25px;
   background-color: #74cfae;
 }
+.footer_inner {
+  text-align: right;
+}
 
 .foot_message {
   color: #f2f2f2f2;
-  padding-right:170px;
-  float: right;
 }
 
 /* ------メディアクエリTABーーーーーー */
@@ -541,5 +541,4 @@
 .foot_message {
   width: 420px;
   font-size: 20px;
-  padding-right:0px;
 }
