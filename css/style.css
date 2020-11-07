@@ -89,7 +89,7 @@
   color:white; 
   width: auto;
   margin: 0 100px;
-  padding-top: 60px;
+  margin-top: 10px;
 }
 .iphone_zone_text h2 {
   font-size: 24px;
@@ -154,6 +154,7 @@
   background-color: #74cfae	;
   padding: 14px 20px;
   margin-left: 90px;
+  display: inline-block;
 }
 /* ---------skill------------ */
 
@@ -263,9 +264,6 @@
     padding-top: 60px;
     padding-bottom: 70px;
   }
-  .our_text {
-    font-size: 36px;
-  }
 	.our_contents{
     margin-top: 40px;
     flex-wrap: nowrap;
@@ -279,7 +277,7 @@
     margin-bottom: 0;
     margin-top: 0;
   }
-  .our_img:nth-child(4) {
+  .our_img:nth-child(4n) {
     margin-top: 80px;
   }
   .our_foot {
@@ -295,7 +293,7 @@
     /* ↓なぜか聞かない */
     margin-top: 40px;
     padding: 15px 30px;
-    font-size: 20px;
+
   }
   /* ------SKILL------ */
   
@@ -315,10 +313,6 @@
 
 
 @media screen and (max-width:767px) {
-  .wrapper  {
-    overflow: hidden;
-    /* margin: auto; */
-  }
   .main {
     padding-top: 94px;
   }
@@ -329,7 +323,7 @@
   .bolt_icon  {
     font-size: 4em;
   }
-  .contact  {
+  .contact_wrap  {
     display: none;
   }
   /* -----ハンバーガー */
@@ -463,9 +457,6 @@
     margin-top: 20px;
   }
   /* ----our----- */
-  .our_text {
-    font-size: 30px;
-  }
 	.our_contents{
     margin-top: 30px;
     flex-wrap: nowrap;
@@ -478,7 +469,7 @@
     height: auto;
     width: 100%;
   }
-  .our_img:nth-child(4) {
+  .our_img:nth-child(4n) {
     margin-top: 100px!important;
   }
   .our_img:nth-child(n+4) {
@@ -490,13 +481,13 @@
     margin-top: 50px; 
   }
   .our_foot p {
+    width: auto;
     margin-bottom: 50px;
   }
   .our_foot_text {
     padding-right: 0;
   }  
   .our_email {
-    margin-top: 100px;
     margin-left: 0;
   }
  /* ----SKILL------------- */
@@ -514,7 +505,6 @@
   height: auto;
 }
 .skill_box p {
-  font-size: 25px;
   margin-top: 10px;
 }
 .skill_box {
@@ -540,6 +530,5 @@
 }
 /* ----footer------- */
 .foot_message {
-  width: 420px;
-  font-size: 20px;
+  margin-right: 5px;
 }
