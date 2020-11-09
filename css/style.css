@@ -114,27 +114,28 @@
   margin-top: 40px;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
-  width: 1100px;
+  align-content: flex-start; */
+  
 }
 .our_img  {
   margin-left: 100px;
+  margin-top: 80px;
   transition: all .3s;
   opacity: 0.7;
-  width: 300px;
-  height: 300px;
+  /* width: 300px; */
+  /* height: 300px; */
 }
 .our_img:hover {
   opacity: 1;
 }
 
+.our_img:nth-child(-n+3) {
+  margin-top: 0;
+}
 .our_img:nth-child(3n+1) {
   margin-left: 0;
-  margin-left: 0;
-}
-.our_img:nth-child(n+4) {
-  margin-bottom: 0;
-  margin-top: 80px;
 }
 
 .our_foot {
@@ -146,7 +147,6 @@
 }
 .our_foot_text  {
   width: 640px;
-  height: 40px;
 }
 .our_email  {
   color: #fff;
@@ -255,7 +255,7 @@
   }
   .iphone_zone_text p{
     margin-top: 25px;
-    height: 70px;
+    /* height: 70px; */
     word-break: break-all;
   }
 
@@ -273,12 +273,11 @@
   .our_img, .our_img:first-child,.our_img:nth-child(4) {
     margin: auto;
   }
-  .our_img:nth-child(n+4) {
-    margin-bottom: 0;
+  .our_img:nth-child(-n+3) {
     margin-top: 0;
   }
-  .our_img:nth-child(4n) {
-    margin-top: 80px;
+  .our_img:nth-child(3n+1) {
+    margin-top: 100px;
   }
   .our_foot {
     margin-top: 80px;
@@ -286,7 +285,7 @@
   }
   .our_foot_text {
     width: 100%;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
   }  
   .our_email {
     margin-left: 0;
@@ -458,23 +457,25 @@
   }
   /* ----our----- */
 	.our_contents{
-    margin-top: 30px;
+    margin-top: 40px;
     flex-wrap: nowrap;
     flex-direction: column;
     align-items: center;
     width: 100%;
   }
   .our_img  {
-    margin: 0 auto;
-    height: auto;
+    /* margin: 0 auto; */
     width: 100%;
   }
-  .our_img:nth-child(4n) {
-    margin-top: 100px!important;
-  }
-  .our_img:nth-child(n+4) {
-    margin-bottom: 0;
+  .our_img:nth-child(-n+3) {
     margin-top: 0;
+    margin-left: 0;
+  }
+  .our_img:first-child {
+    margin-top: 0px;
+  }
+  .our_img:nth-child(3n+1) {
+    margin-top: 100px;
   }
   .our_foot {
     display: block;
@@ -531,4 +532,5 @@
 /* ----footer------- */
 .foot_message {
   margin-right: 5px;
+}
 }
