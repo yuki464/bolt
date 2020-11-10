@@ -15,7 +15,7 @@
   color: #333;
 }
 
-.wrapper{
+.wrapper {
   width: auto;
   margin: 0 auto;
   font-family: "Lato";
@@ -23,13 +23,13 @@
 .iphone_zone_text h2,.our_text {
   font-family: "Raleway";
 }
-.inner{
+.inner {
   width: 1100px;
   text-align: center;
   align-items: center;
   margin: 0 auto;
 }
-.header{
+.header {
   padding: 15px 0;
   z-index: 999;
   position: fixed;
@@ -43,13 +43,13 @@
   display: flex;
   justify-content: space-between;
 }
-.bolt_icon  {
+.bolt_icon {
   color: #333;
   font-size: 32px;
   padding-left: ;
 }
 
-.contact  {
+.contact {
   padding: 14px 15px;
   color: #fff;
   font-size: 12px;
@@ -67,17 +67,17 @@
   font-weight: 700;
   font-family: "Raleway";
 }
-.theme_text  {
+.theme_text {
   margin-top: 20px;
   font-size: 30px;
   color: #c0c0c0;
 }
 /* --------theme-------------------- */
-.iphone_zone  {
+.iphone_zone {
   background-color: #74cfae;
   padding-top: 50px;
 }
-.iphone_zone_contents  {
+.iphone_zone_contents {
   display: flex;
   justify-content: space-around;
 }
@@ -94,13 +94,13 @@
 .iphone_zone_text h2 {
   font-size: 24px;
 }
-.iphone_zone_text p{
+.iphone_zone_text p {
   margin-top: 35px;
   font-size: 20px;
   
 }
 /* ----------our----------- */
-.article_our  {
+.article_our {
   background-color: #f2f2f2;
   padding-top: 60px;
   padding-bottom: 70px;
@@ -110,7 +110,7 @@
   font-size: 24px;
   color: #333;
 }
-.our_contents{
+.our_contents {
   margin-top: 40px;
   display: flex;
   justify-content: center;
@@ -119,7 +119,7 @@
   align-content: flex-start; */
   
 }
-.our_img  {
+.our_img {
   margin-left: 100px;
   margin-top: 80px;
   transition: all .3s;
@@ -145,10 +145,10 @@
   justify-content: center;
   margin-top: 90px;
 }
-.our_foot_text  {
+.our_foot_text {
   width: 640px;
 }
-.our_email  {
+.our_email {
   color: #fff;
   font-size: 12px;
   background-color: #74cfae	;
@@ -158,7 +158,7 @@
 }
 /* ---------skill------------ */
 
-.skill  {
+.skill {
   background-color: #4e4e4e;
   color: white;
   padding-top: 70px;
@@ -167,31 +167,31 @@
 .main {
   padding-top: 62px;
 }
-.skill_title  {
+.skill_title {
   font-family: "Raleway";
   font-size: 24px;
 }
-.skills_wrap  {
+.skills_wrap {
   margin-top: 50px;
   display: flex;
   justify-content: center;
 }
-.skill_box:first-child  {
+.skill_box:first-child {
   margin-left: 0;
 }
-.skill_box  {
+.skill_box {
   margin-left: 180px;
 }
-.skill_box img  {
+.skill_box img {
   height: 120px;
   width: 120px;
 }
-.skill_box p  {
+.skill_box p {
   font-size: 16px;
   margin-top: 10px;
 }
 /* ----------sns------------- */
-.sns  {
+.sns {
   background-color: #f2f2f2;
   padding:200px 0;
 }
@@ -253,7 +253,7 @@
     margin-top: 0;
     padding-top: 0;
   }
-  .iphone_zone_text p{
+  .iphone_zone_text p {
     margin-top: 25px;
     /* height: 70px; */
     word-break: break-all;
@@ -264,20 +264,27 @@
     padding-top: 60px;
     padding-bottom: 70px;
   }
-	.our_contents{
+	.our_contents {
     margin-top: 40px;
     flex-wrap: nowrap;
     flex-direction: column;
     width: auto;
   }
-  .our_img, .our_img:first-child,.our_img:nth-child(4) {
-    margin: auto;
+  .our_img {
+    margin-top: 0;
+    margin-left: 0;
   }
-  .our_img:nth-child(-n+3) {
+  /* ↓どうしても一枚目が上書きできないのでとりあえずぼつにします */
+  /* .our_img:nth-child(1) {
     margin-top: 0;
   }
   .our_img:nth-child(3n+1) {
     margin-top: 100px;
+    margin-left: 0;
+  } */
+  .our_img:nth-child(4n) {
+    margin-top: 100px;
+    margin-left: 0;
   }
   .our_foot {
     margin-top: 80px;
@@ -319,10 +326,10 @@
     width: 97%;
   }
   
-  .bolt_icon  {
+  .bolt_icon {
     font-size: 4em;
   }
-  .contact_wrap  {
+  .contact_wrap {
     display: none;
   }
   /* -----ハンバーガー */
@@ -407,7 +414,7 @@
     box-shadow: 6px 0 25px rgba(0,0,0,.15);
   }
   
-  .header-logo-menu{
+  .header-logo-menu {
    display: flex;
    display: -moz-flex;
    display: -o-flex;
@@ -425,12 +432,12 @@
     padding-top: 160px;
     padding-bottom: 130px;
   }
-  .theme_message{
+  .theme_message {
     padding-top: 0;
     padding-bottom: 0;
     font-size: 80px;
   }
-  .theme_text  {
+  .theme_text {
     margin-top: 20px;
     font-size: 30px;
   }
@@ -444,7 +451,7 @@
   .iphone {
     padding-left: 0;
   }
-  .iphone_zone_contents  {
+  .iphone_zone_contents {
     display: block;
   }
   .iphone_zone_text {
@@ -456,26 +463,28 @@
     margin-top: 20px;
   }
   /* ----our----- */
-	.our_contents{
-    margin-top: 40px;
+	.our_contents {
+    margin-top: 30px;
     flex-wrap: nowrap;
     flex-direction: column;
     align-items: center;
     width: 100%;
   }
-  .our_img  {
-    /* margin: 0 auto; */
-    width: 100%;
-  }
-  .our_img:nth-child(-n+3) {
+  .our_img {
     margin-top: 0;
     margin-left: 0;
   }
-  .our_img:first-child {
-    margin-top: 0px;
+  /* ↓どうしても一枚目が上書きできないのでとりあえずぼつにします */
+  /* .our_img:nth-child(1) {
+    margin-top: 0;
   }
   .our_img:nth-child(3n+1) {
     margin-top: 100px;
+    margin-left: 0;
+  } */
+  .our_img:nth-child(4n) {
+    margin-top: 100px;
+    margin-left: 0;
   }
   .our_foot {
     display: block;
@@ -498,7 +507,7 @@
  .skill_title {
    font-size: 50px;
  }
- .skills_wrap  {
+ .skills_wrap {
   display: block;
 }
 .skill_box img {
