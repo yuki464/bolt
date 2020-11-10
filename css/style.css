@@ -223,7 +223,10 @@
 .foot_message {
   color: #f2f2f2f2;
 }
-
+/* ---外ノットーーー */
+/* .our_img:not(:first-child) {
+  margin-top: 0;
+} */
 /* ------メディアクエリTABーーーーーー */
 @media screen and (max-width:1199px)and (min-width:768px ) {
   .inner {
@@ -274,18 +277,14 @@
     margin-top: 0;
     margin-left: 0;
   }
-  /* ↓どうしても一枚目が上書きできないのでとりあえずぼつにします */
-  /* .our_img:nth-child(1) {
-    margin-top: 0;
+
+  .our_img:first-of-type {
+    margin-top: 0 !important;
   }
   .our_img:nth-child(3n+1) {
     margin-top: 100px;
     margin-left: 0;
-  } */
-  .our_img:nth-child(4n) {
-    margin-top: 100px;
-    margin-left: 0;
-  }
+  } 
   .our_foot {
     margin-top: 80px;
     display: block;
@@ -474,18 +473,13 @@
     margin-top: 0;
     margin-left: 0;
   }
-  /* ↓どうしても一枚目が上書きできないのでとりあえずぼつにします */
-  /* .our_img:nth-child(1) {
-    margin-top: 0;
+  .our_img:first-of-type {
+    margin-top: 0 !important;
   }
   .our_img:nth-child(3n+1) {
     margin-top: 100px;
     margin-left: 0;
-  } */
-  .our_img:nth-child(4n) {
-    margin-top: 100px;
-    margin-left: 0;
-  }
+  } 
   .our_foot {
     display: block;
     margin-top: 50px; 
