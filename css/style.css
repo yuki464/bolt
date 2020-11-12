@@ -2,12 +2,21 @@
 .header-logo-menu {
   display: none;
 }
+img {
+  vertical-align: bottom;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
 /* .clearfix::after {
   content: "";
   display: block;
   clear: both;
 } */
-.btn  {
+.btn {
   text-decoration: none;
   transition: all  0.3s ;
 }
@@ -116,16 +125,15 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  align-content: flex-start; */
+  align-content: flex-start; 
   
 }
 .our_img {
+  vertical-align: bottom;
   margin-left: 100px;
   margin-top: 80px;
   transition: all .3s;
   opacity: 0.7;
-  /* width: 300px; */
-  /* height: 300px; */
 }
 .our_img:hover {
   opacity: 1;
@@ -201,13 +209,14 @@
 }
 .sns_box a {
   color: #74cfae;
-  text-decoration: none;
+}
+.sns_box li {
   width: 185px;
   padding: 30px 0;
   font-size: 50px;
   transition: all  0.3s ;
 }
-.sns_box a:hover {
+.sns_box li:hover {
   background-color: #fff;
 }
 /* ---------footer-------- */
@@ -223,10 +232,7 @@
 .foot_message {
   color: #f2f2f2f2;
 }
-/* ---外ノットーーー */
-/* .our_img:not(:first-child) {
-  margin-top: 0;
-} */
+
 /* ------メディアクエリTABーーーーーー */
 @media screen and (max-width:1199px)and (min-width:768px ) {
   .inner {
@@ -274,24 +280,24 @@
     width: auto;
   }
   .our_img {
+    vertical-align: bottom;
     margin-top: 0;
     margin-left: 0;
   }
 
-  .our_img:first-of-type {
-    margin-top: 0 !important;
-  }
   .our_img:nth-child(3n+1) {
     margin-top: 100px;
     margin-left: 0;
   } 
+  .our_img:first-of-type {
+    margin-top: 0 ;
+  }
   .our_foot {
     margin-top: 80px;
     display: block;
   }
   .our_foot_text {
     width: 100%;
-    /* margin-bottom: 40px; */
   }  
   .our_email {
     margin-left: 0;
@@ -470,28 +476,29 @@
     width: 100%;
   }
   .our_img {
+    vertical-align: bottom;
     margin-top: 0;
     margin-left: 0;
-  }
-  .our_img:first-of-type {
-    margin-top: 0 !important;
   }
   .our_img:nth-child(3n+1) {
     margin-top: 100px;
     margin-left: 0;
   } 
+  .our_img:first-of-type {
+    margin-top: 0 ;
+  }
   .our_foot {
     display: block;
     margin-top: 50px; 
   }
   .our_foot p {
     width: auto;
-    margin-bottom: 50px;
   }
   .our_foot_text {
     padding-right: 0;
   }  
   .our_email {
+    margin-top: 10px;
     margin-left: 0;
   }
  /* ----SKILL------------- */
@@ -528,12 +535,11 @@
   padding-top: 0;
   padding-bottom: 0;
 }
-.sns_box a {
+.sns_box li {
   width:100%;
   padding: 50px 0;
 }
 /* ----footer------- */
 .foot_message {
-  margin-right: 5px;
 }
 }
